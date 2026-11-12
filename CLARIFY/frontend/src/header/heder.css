@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    padding: 10px 15px 10px 15px;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    /* هذا هو التأثير */
+    backdrop-filter: blur(12px);       
+    /* background: linear-gradient(135deg, #0f0518 0%, #1a0b2e 50%, #0f0518 100%); */
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.2);
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    
+    
+}
+.shap{
+    color: rgb(192 132 252);
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    margin-right: 10px;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+
+}
+@keyframes pulse{
+    0%{
+        opacity: 1;
+    }
+    12.5%{
+        opacity: 0.75;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    37.5%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0;
+    }
+    62.5%{
+        opacity: 0.25;
+    }
+    75%{
+        opacity: 0.5;
+    }
+    87.5%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.colorMove{
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #a855f7 0%, #22d3ee 50%, #a855f7 100%);
+    background-size: 200% 200%; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+     animation: moveGradient 3s linear infinite;
+}
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    20% {
+        background-position: 50% 50%;
+    }
+    40% {
+        background-position: 100% 100%;
+    }
+    60% {
+        background-position: 50% 50%;
+    }
+    80% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }   
+}
+
+
+.navLinks{
+    margin-left: auto;
+}
+.navLinks a{
+    margin-left: 20px;
+    text-decoration: none;
+}
+.SignIn{
+    margin-left: 20px;
+    padding: 5px 15px;
+    background-color: #00000000;
+    color: rgb(168 85 247);
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: rgb(169, 85, 247);
+    transition: 0.7s;
+}
+.SignIn:hover{
+    background-color: rgb(168 85 247);
+    color: #ffffff;
+    border-width: 3px;
+    border-color: rgb(169, 85, 247);
+    
+}
